@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  Prototype
+//
+//  Created by Joanne  Park  on 1/11/21.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//
+// Prefix header
+//
+
+#include "Preprocessor.h"
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#import "UnityAppController.h"
+#endif
+
+#include "UnityTrampolineConfigure.h"
+#include "UnityInterface.h"
+
+#ifndef __OBJC__
+    #if defined(__cplusplus)
+        #include "pch-cpp.hpp"
+    #else
+        #include "pch-c.h"
+    #endif
+#endif
+
+#ifndef TARGET_IPHONE_SIMULATOR
+    #define TARGET_IPHONE_SIMULATOR 0
+#endif
+
+#define printf_console printf
+#endif /* PrefixHeader_pch */
