@@ -1,0 +1,32 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Changes to make to run the code in your environment:\
+\
+In Prototype.xcodeproj:\
+	Change \'91Header Search Paths\'92 and \'91Library Search Paths\'92 to\
+		$<PATH TO SWIFT FOLDER>/SwiftFolder/Prototype/PrefixHeader.pch\
+\
+For Raspberry Pi:\
+\
+Install the following:\
+	nodejs:\
+		curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -\
+		sudo apt-get install -y nodejs\
+	\
+	npm:\
+		sudo apt-get -f install npm\
+	Bleno:\
+		sudo npm install Bleno\
+	change the version of nodejs:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 		sudo npm install -g n\
+		sudo n 8.9.0	\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 	bluetooth-hci-socket:\
+		sudo npm install bluetooth-chi-socket \'97unsafe-perm \
+	}
