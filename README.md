@@ -5,9 +5,9 @@ Disclaimer:
 
 Very early release.
 
-IoS app working with ios 15
+iOS app working with iOS 15
 
-Working with Raspberry PI 3/4 with a USB wifi dongle that supports monitor mode.
+Working with Raspberry PI 3/4 with a USB wifi dongle that supports monitor mode
 
 Demo Video:
 
